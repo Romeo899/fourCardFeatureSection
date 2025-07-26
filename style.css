@@ -26,28 +26,132 @@
     --grey-500: hsl(234, 12%, 34%);
     --grey-400: hsl(212, 6%, 44%);
     --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 98%);
 
     /* typography */
     --text-preset-1: 600 36px/1.4 'Poppins', sans-serif;
+    --mobile-text-preset-1: 600 24px/1.4 'Poppins', sans-serif;
     --text-preset-2: 200 36px/1.4 'Poppins', sans-serif;
+    --mobile-text-preset-2: 200 24px/1.4 'Poppins', sans-serif;
     --text-preset-3: 600 20px/1.35 'Poppins', sans-serif;
     --text-preset-4: 400 15px/1.4 'Poppins', sans-serif;
     --text-preset-5: 400 13px/1.6 'Poppins', sans-serif;
     
     /* Spacing */
-
+    --spacing-600: 56px;
+    --spacing-550: 46px;
     --spacing-500: 40px;
     --spacing-400: 32px;
     --spacing-300: 24px;
     --spacing-200: 16px;
     --spacing-100: 8px;
+    --default-letter-spacing: 0; 
+    --special-letter-spacing: 0.25px;
 
+}
+/* Special letter spacing applied */
+.heading, .thinHeading {
+    letter-spacing: var(--special-letter-spacing);
+}
+
+.cardName, .cardDescription {
+    letter-spacing: var(--default-letter-spacing);
+}
+
+/* mobile positioning */
+body {
+    background-color: var(--off-white);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: var(--spacing-600) var(--spacing-400) var(--spacing-400) var(--spacing-400);
+}
+
+/* Header */
+.headerContainer {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.heading {
+    font: var(--mobile-text-preset-1);
+    color: var(--grey-500);
+
+    margin-bottom: var(--spacing-200); /* margin added between heading and description */
+}
+
+.thinHeader {
+    font: var(--mobile-text-preset-2);
+    display: block;
+}
+
+/* paragraph */
+.description {
+    font: var(--text-preset-4);
+    color: var(--grey-500);
+}
+
+/* card - styles */
+
+.cardWrapper {
+    display: grid;
+}
+.cardContainer {
+    background-color: var(--white);
+    max-width: 314px;
+    max-height: 250px;
+    
+    border-radius: var(--spacing-100);
+    padding: var(--spacing-400);
+    margin-bottom: var(--spacing-400); /* create space between cards */
+}
+
+.cardTextContainer {
+    margin: var(--spacing-400) 0;
+}
+
+.cardName {
+    font: var(--text-preset-3);
+    color: var(--grey-500);
+    margin-bottom: 0.4rem;
+}
+
+.cardDescription {
+    font: var(--text-preset-5);
+    color: var(--grey-400);
+}
+
+/* card Image */
+.cardImage {
+    float: right;
 }
 
 
+/* border-top colours */
 
+.cardSupervisor {
+    border-top: 4px solid var(--cyan);
+}
 
+.cardBuilder {
+    border-top: 4px solid var(--red);
+}
 
+.cardKarma {
+    border-top: 4px solid var(--orange);
+}
+
+.cardCalculator {
+    border-top: 4px solid var(--blue);
+}
 
 /* attribution */
 
