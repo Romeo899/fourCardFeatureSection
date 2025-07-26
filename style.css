@@ -110,12 +110,13 @@ main {
     max-height: 250px;
     
     border-radius: var(--spacing-100);
-    padding: var(--spacing-400);
+    padding: var(--spacing-400); /* all around inside 32px */
     margin-bottom: var(--spacing-400); /* create space between cards */
+    box-shadow: 0 15px 30px -11px rgba(131,166,210,0.5); /* added box shadow */
 }
 
 .cardTextContainer {
-    margin: var(--spacing-400) 0;
+    margin-bottom: var(--spacing-400);
 }
 
 .cardName {
@@ -161,6 +162,14 @@ main {
 
 /* tablet */
 @media (min-width: 768px) {
+
+
+
+
+
+
+
+
 /* Attribution */
 .attribution {
     
