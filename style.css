@@ -1,3 +1,53 @@
+/* Mobile first design */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+    
+/* global styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+/* reusuable styles */
+
+:root {
+    /* colours */
+    /* primary */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* neutral */
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+    --white: hsl(0, 0%, 100%);
+
+    /* typography */
+    --text-preset-1: 600 36px/1.4 'Poppins', sans-serif;
+    --text-preset-2: 200 36px/1.4 'Poppins', sans-serif;
+    --text-preset-3: 600 20px/1.35 'Poppins', sans-serif;
+    --text-preset-4: 400 15px/1.4 'Poppins', sans-serif;
+    --text-preset-5: 400 13px/1.6 'Poppins', sans-serif;
+    
+    /* Spacing */
+
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-100: 8px;
+
+}
+
+
+
+
+
 
 /* attribution */
 
