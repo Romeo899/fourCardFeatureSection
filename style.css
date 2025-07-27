@@ -294,11 +294,23 @@ body {
 
 /* Attribution */
 .attribution {
-    display: none;
+    display: block;
+    font: var(--text-preset-1);
     font-size: 11px; text-align: center;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
 
 }
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover {
+    cursor: pointer;
+    color: hsl(228, 45%, 60%);
+    text-shadow: 0 0 4px hsla(228, 45%, 60%, 0.4);
 }
 }
