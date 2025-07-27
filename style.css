@@ -63,6 +63,7 @@ body {
     background-color: var(--off-white);
 
     min-height: 100vh;
+    width: 100%;
 
     display: flex;
     justify-content: center;
@@ -165,8 +166,85 @@ main {
 
 
 
+/* main | margin top bottom */
+
+.main {
+    min-width: 100%;
+    margin: 5.33rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+/* Heading styles */
+
+.headerContainer {
+    
+    max-width: 540px;
+
+    margin: 0 7.6rem 7.6rem 4.933rem;
+}
+
+.heading {
+    font: var(--text-preset-1);
+}
+
+.thinHeader {
+    font: var(--text-preset-2);
+}
 
 
+/* Card - Grid Styles */
+.cardWrapper {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: var(--spacing-400);
+
+}
+
+/* remove margin-bottom .cardContainer since we now have gap ^*/
+
+.cardContainer {
+    margin-bottom: 0;
+}
+
+.cardCenterTop {
+    grid-row: 1;
+    grid-column: 1/ 3;
+    
+}
+
+.cardCenterBottom {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+
+}
+
+.cardLeft {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    justify-self: end;
+}
+
+.cardRight {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-self: start;
+}
+
+.gridCenter {
+    justify-self: center;
+}
+
+ 
 
 
 
@@ -179,4 +257,6 @@ main {
 .attribution a {
     color: hsl(228, 45%, 44%); 
 }
+
+
 }
